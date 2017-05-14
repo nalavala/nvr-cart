@@ -1,0 +1,5 @@
+package com.Nvr.Backend.config;
+
+public class ApplicationConfig {
+
+}

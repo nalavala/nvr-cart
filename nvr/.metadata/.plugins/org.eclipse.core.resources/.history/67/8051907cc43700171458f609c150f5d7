@@ -1,0 +1,31 @@
+package com.vendi.frontend;
+
+import java.util.List;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.vendi.backend.dao.CategoryDAO;
+import com.vendi.backend.daoimp.CategoryDAOImp;
+import com.vendi.backend.model.Category;
+
+public class CategoryDaoTest 
+{
+   public static void main(String args[])
+   {
+	    AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext();
+		context.scan("com.vendi.frontend");
+		context.refresh();
+		CategoryDAO categoryDao=(CategoryDAO) context.getBean("categoryDao");
+		Category category=new Category();
+		category.setCid(43);
+		category.setCname("nalavala");
+		//categoryDao.deleteCategory(2);
+		categoryDao.insertCategory(category);
+		List<Category> list=(List<Category>)categoryDao.showCategory();
+		for(Category cat:list)
+		{
+			System.out.println(cat.getCid());
+		}
+		
+   }
+}

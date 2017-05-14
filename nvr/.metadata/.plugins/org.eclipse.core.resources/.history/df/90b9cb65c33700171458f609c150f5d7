@@ -1,0 +1,14 @@
+package com.vendi.backend.dao;
+
+import java.util.List;
+
+import com.vendi.backend.model.Supplier;
+
+public interface SupplierDAO 
+{
+	public void insertSupplier(Supplier supplier);
+	public void deleteSupplier(int sid);
+	public List<Supplier> showSupplier();
+	public Supplier getSupplier(int sid);
+	public void updateSupplier(Supplier supplier);
+}

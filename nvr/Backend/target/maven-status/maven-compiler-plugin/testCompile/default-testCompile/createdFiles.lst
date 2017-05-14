@@ -1,0 +1,5 @@
+com\Nvr\Backend\SupplierDaoTest.class
+com\Nvr\Backend\UserTest.class
+com\Nvr\Backend\CartTest.class
+com\Nvr\Backend\ProductTest.class
+com\Nvr\Backend\CategoryDaoTest.class

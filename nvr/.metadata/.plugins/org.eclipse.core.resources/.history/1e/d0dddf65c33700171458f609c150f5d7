@@ -1,0 +1,14 @@
+package com.vendi.backend.dao;
+
+import java.util.List;
+
+import com.vendi.backend.model.Category;
+
+public interface CategoryDAO
+{
+	public void insertCategory(Category category);
+	public void deleteCategory(int cid);
+	public List<Category> showCategory();
+	public Category getCategory(int id);
+	public void updateCategory(Category category);
+}

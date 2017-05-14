@@ -1,0 +1,5 @@
+com\Nvr\Frontend\controller\UserController.class
+com\Nvr\Frontend\controller\CartController.class
+com\Nvr\Frontend\controller\ProductController.class
+com\Nvr\Frontend\controller\CategoryController.class
+com\Nvr\Frontend\controller\SupplierController.class
